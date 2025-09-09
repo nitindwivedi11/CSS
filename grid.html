@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <title>GRID</title>
+    <style>
+        #heading{
+            text-align: center;
+        }
+
+        *{
+            margin:0;padding:0;
+        }
+
+        .box{
+            height:75px;
+            width:75px;
+            border:3px solid black;
+            margin:5px;
+        }
+        
+        #container{
+            height:300px;
+            width:600px;
+            padding:10px;
+            margin:20px;
+            border:3px solid black;
+            display:grid;
+            grid-template-columns: 80px 100px;
+            grid-template-rows:50px 100px;
+
+        }
+        #box1{
+            grid-row: 1/2;
+            gird-column: 1/2;
+            background-color:aqua;
+        }
+        #box2{
+            grid-row: 2/2;
+            gird-column: 2/2;
+            background-color:#8a2be2;
+        }
+        #box3{
+            grid-row: 2/2;
+            gird-column: 1/2;
+            background-color: yellow;
+        }
+        #box4{
+            grid-row: 1/2;
+            gird-column: 2/2;
+            background-color:tomato;
+        }
+
+    </style>
+</head>
+<body>
+    <h1 id="heading">GRID CONTAINER</h1>
+    <div id="container">
+        <div id="box1" class="box">item1</div>
+        <div id="box2" class="box">item2</div>
+        <div id="box3" class="box">item3</div>
+        <div id="box4" class="box" >item4</div>
+    </div>
+</body>
+</html>
